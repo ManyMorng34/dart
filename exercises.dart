@@ -12,6 +12,7 @@
 // ============================================================
 
 import 'dart:async';
+import 'dart:ffi';
 
 void main() {
   // Uncomment one at a time:
@@ -21,8 +22,8 @@ void main() {
   exercise3();
   exercise4();
   exercise5();
-  // exercise6();
-  // exercise7();
+  exercise6();
+  exercise7();
   // exercise8();
 }
 
@@ -178,11 +179,14 @@ void exercise5() {
 //   Welcome in
 // ------------------------------------------------------------
 void exercise6() {
-  int age = 25;
-  bool hasId = true;
-  bool isVip = false;
-
-  // your code here
+  int age=25;
+  bool hasId=true;
+  bool isVip=false;
+  if(( age >=25 && hasId) || isVip){
+    print('Welcome please ');
+  }else{
+    print('your welcome');
+  }
 }
 
 // ------------------------------------------------------------
@@ -195,11 +199,11 @@ void exercise7() {
   int a = 10;
   bool flag = false;
 
-  // print(a != 10 && flag);
-  // print(a != 10 || !flag);
-  // print(!(a > 5));
-  // print(a >= 10 && a <= 20);
-  // print(a > 5 || a > 100);
+  print(a != 10 && flag);//false
+  print(a != 10 || !flag);//true
+  print(!(a > 5));//false
+  print(a >= 10 && a <= 20); //true
+  print(a > 5 || a > 100); //true
 }
 
 // ------------------------------------------------------------
@@ -228,5 +232,11 @@ void exercise7() {
 //   Total    : 7.425
 // ------------------------------------------------------------
 void exercise8() {
-  // your code here
+  const shopName="Phnom penh";
+  const tax = 0.10;
+  final drink="Ice latte";
+  final price =2.5;
+  final qty=3;
+  var subtotal=price*qty;
+  
 }
